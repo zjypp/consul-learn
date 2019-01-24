@@ -1,0 +1,13 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: consul-provider
+  cloud:
+    consul:
+      host: 127.0.0.1
+      port: 8500
+      discovery:
+        tags: provider1
+        prefer-ip-address: true
+        ip-address: 127.0.0.1
